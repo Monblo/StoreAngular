@@ -5,7 +5,22 @@
       "ProjectGuid": "fdf54ec6-2278-448b-b028-a22d112391df",
       "DisplayName": "StoreAngular",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "3e0e2897-6037-4f70-8fee-89198b1bdd1c": {
+      "ProjectGuid": "3e0e2897-6037-4f70-8fee-89198b1bdd1c",
+      "DisplayName": "Core",
+      "ColorIndex": 1
+    },
+    "f24494b1-10c8-4ce3-b888-12dbdcf5bf5a": {
+      "ProjectGuid": "f24494b1-10c8-4ce3-b888-12dbdcf5bf5a",
+      "DisplayName": "Infrastructure",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

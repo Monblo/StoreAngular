@@ -1,7 +1,3 @@
-C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
-C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
-C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\ref\Infrastructure.dll
-C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
@@ -10,6 +6,12 @@ C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\Infrastruc
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Core.dll
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Core.pdb
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache

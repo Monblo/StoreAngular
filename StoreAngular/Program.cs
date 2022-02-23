@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Infrastructure.Data;
 using Core.Interfaces;
+using Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<StoreContext>(x => 
-    x.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), b => 
+    b.MigrationsAssembly("StoreAngular")));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
