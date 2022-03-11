@@ -8,8 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<StoreContext>(x => 
-    x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), b => 
-    b.MigrationsAssembly("StoreAngular")));
+    x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
