@@ -14,4 +14,4 @@ C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Core.dll
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\Core.pdb
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
 C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
-C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\bin\Debug\net6.0\ref\Infrastructure.dll
+C:\Users\ZV193EC\Desktop\StoreAngular\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
