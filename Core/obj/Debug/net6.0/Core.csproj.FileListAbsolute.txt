@@ -10,5 +10,5 @@ C:\Users\ZV193EC\Desktop\StoreAngular\Core\obj\Debug\net6.0\Core.dll
 C:\Users\ZV193EC\Desktop\StoreAngular\Core\obj\Debug\net6.0\ref\Core.dll
 C:\Users\ZV193EC\Desktop\StoreAngular\Core\obj\Debug\net6.0\Core.pdb
 C:\Users\ZV193EC\Desktop\StoreAngular\Core\obj\Debug\net6.0\Core.genruntimeconfig.cache
+C:\Users\ZV193EC\Desktop\StoreAngular\Core\bin\Debug\net6.0\ref\Core.dll
 C:\Users\ZV193EC\Desktop\StoreAngular\Core\obj\Debug\net6.0\Core.csproj.AssemblyReference.cache
-C:\Users\ZV193EC\Desktop\StoreAngular\Core\obj\Debug\net6.0\refint\Core.dll
