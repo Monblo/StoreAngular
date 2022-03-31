@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "vbmyGbO9PxCVFueoY3x3qS2/VzMd2ZvE1K9G4c/8HftwCUG00YTYlqNgOnxy6DD7G09ljD/fY0EdxkOQLGP1sA==",
+  "dgSpecHash": "NgvZrTKqFNekduOvbK7piu8F8Qri0rd+DNTUNg+SHqhFcBjoix0ZQT94WJY7Xw+myyuYP/WKCzoZuF1WBBZYoA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ZV193EC\\Desktop\\StoreAngular\\Core\\Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ZV193EC\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\ZV193EC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\ZV193EC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\ZV193EC\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ZV193EC\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\microsoft.entityframeworkcore.6.0.2.nupkg.sha512",
     "C:\\Users\\ZV193EC\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.2\\microsoft.entityframeworkcore.abstractions.6.0.2.nupkg.sha512",
     "C:\\Users\\ZV193EC\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.2\\microsoft.entityframeworkcore.analyzers.6.0.2.nupkg.sha512",

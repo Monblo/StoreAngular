@@ -1,11 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using Core.Interfaces;
 using Infrastructure.Data;
+using StoreAngular.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddAutoMapper(typeof(MappingProfiles));
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<StoreContext>(x => 
     x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
