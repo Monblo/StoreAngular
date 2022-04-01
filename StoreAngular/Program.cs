@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Core.Interfaces;
 using Infrastructure.Data;
 using StoreAngular.Helpers;
+using StoreAngular.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,12 +17,15 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 
 var app = builder.Build();
 
+app.UseMiddleware<ExceptionMiddleware>();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
