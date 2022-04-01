@@ -26,15 +26,6 @@ namespace StoreAngular.Controllers
             return Ok();
         }
 
-        [HttpGet("servererror")]
-        public ActionResult GetServerError()
-        {
-            var thing = _context.Products.Find(42);
-
-
-            return Ok();
-        }
-
         [HttpGet("badrequest")]
         public ActionResult GetBadRequest()
         {
