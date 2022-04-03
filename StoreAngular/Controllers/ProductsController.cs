@@ -6,6 +6,7 @@ using Core.Interfaces;
 using Core.Specifications;
 using StoreAngular.Dtos;
 using AutoMapper;
+using StoreAngular.Errors;
 
 namespace StoreAngular.Controllers
 {
@@ -45,6 +46,7 @@ namespace StoreAngular.Controllers
 
             return _mapper.Map<Product, ProductDto>(product);
 
+            if (product == null) return NotFound(new ApiResponse(404));
         }
 
         [HttpGet("brands")]

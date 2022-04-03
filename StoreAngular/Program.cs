@@ -5,6 +5,7 @@ using StoreAngular.Helpers;
 using StoreAngular.Middleware;
 using Microsoft.AspNetCore.Mvc;
 using StoreAngular.Errors;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,7 @@ builder.Services.AddDbContext<StoreContext>(x =>
     x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.InvalidModelStateResponseFactory = actionContext =>
@@ -34,15 +36,22 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
     };
 });
 
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
+});
+
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
+app.UseSwagger();
+app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1"));
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
+//if (!app.Environment.IsDevelopment())
+//{
+//    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+//    app.UseHsts();
+//}
 
 app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
