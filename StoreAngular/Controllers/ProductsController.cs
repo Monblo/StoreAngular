@@ -29,9 +29,9 @@ namespace StoreAngular.Controllers
 
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<ProductDto>>> GetProducts(
-            string sort, int? brandId, int? typeId)
+            [FromQuery]ProductSpecParams productParams)
         {
-            var spec = new ProductsWithTypesAndBrandsSpecification(sort, brandId, typeId);
+            var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
 
             var products = await _productsRepo.ListAsync(spec);
 

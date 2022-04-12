@@ -1,11 +1,12 @@
 ﻿using Core.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Data
@@ -20,11 +21,11 @@ namespace Infrastructure.Data
 
                 if (!context.ProductBrands.Any())
                 {
-                    var brandsData = 
+                    var brandsData =
                         File.ReadAllText(path + @"/Data/SeedData/brands.json");
 
-                    var brands = JsonSerializer.Deserialize<List<ProductBrand>>(brandsData);
-                
+                    var brands = JsonConvert.DeserializeObject<List<ProductBrand>>(brandsData);
+
                     foreach (var item in brands)
                     {
                         context.ProductBrands.Add(item);
@@ -38,7 +39,7 @@ namespace Infrastructure.Data
                     var typesData =
                         File.ReadAllText(path + @"/Data/SeedData/types.json");
 
-                    var types = JsonSerializer.Deserialize<List<ProductType>>(typesData);
+                    var types = JsonConvert.DeserializeObject<List<ProductType>>(typesData);
 
                     foreach (var item in types)
                     {
@@ -53,7 +54,10 @@ namespace Infrastructure.Data
                     var productsData =
                         File.ReadAllText(path + @"/Data/SeedData/products.json");
 
-                    var products = JsonSerializer.Deserialize<List<Product>>(productsData);
+                    var products = JsonConvert.DeserializeObject<List<Product>>(productsData, new JsonSerializerSettings
+                    {
+                        Culture = CultureInfo.GetCultureInfo("pl-PL")
+                    });
 
                     foreach (var item in products)
                     {
@@ -68,6 +72,6 @@ namespace Infrastructure.Data
                 var logger = loggerFactory.CreateLogger<StoreContextSeed>();
                 logger.LogError(ex.Message);
             }
-        }
+        }   
     }
 }

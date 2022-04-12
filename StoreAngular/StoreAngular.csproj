@@ -8,6 +8,7 @@
     <SpaProxyServerUrl>https://localhost:44496</SpaProxyServerUrl>
     <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
     <ImplicitUsings>enable</ImplicitUsings>
+	<TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,9 +31,26 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="ClientApp\.angular\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientApp\.angular\**" />
+    <EmbeddedResource Remove="ClientApp\.angular\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="ClientApp\.angular\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\.angular\cache\angular-webpack\740a0c342eb00f87775de33547bed203804790c8\0.pack" />
+    <None Remove="ClientApp\.angular\cache\angular-webpack\740a0c342eb00f87775de33547bed203804790c8\index.pack" />
+    <None Remove="ClientApp\.angular\cache\angular-webpack\d12513588fa693d78c31919ca77f930f708b056e\0.pack" />
+    <None Remove="ClientApp\.angular\cache\angular-webpack\d12513588fa693d78c31919ca77f930f708b056e\index.pack" />
+    <None Remove="ClientApp\.angular\cache\babel-webpack\432489fef927c83e83665650aa22112b.json" />
+    <None Remove="ClientApp\.angular\cache\babel-webpack\8cdfd76ef763b8fc4574b4e1f0f92927.json" />
+    <None Remove="ClientApp\.angular\cache\babel-webpack\8d5c38195a33f39cbe14a2505b4fa3e5.json" />
+    <None Remove="ClientApp\.angular\cache\babel-webpack\b07d0d1bc293d148567f672d0ae721a2.json" />
+    <None Remove="ClientApp\.angular\cache\babel-webpack\b7c09bed5b1d641d170094b30e612f1e.json" />
+    <None Remove="ClientApp\.angular\cache\babel-webpack\ee91b47cc87fec28499bd795e144b6fa.json" />
   </ItemGroup>
 
   <ItemGroup>
